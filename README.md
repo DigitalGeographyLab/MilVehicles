@@ -18,4 +18,5 @@ The system was developed using the following libraries. Make sure you have insta
 |<a href="https://www.h5py.org/">h5py</a>|2.7.0|
 |<a href="https://keras.io">Keras</a>|2.0.2|
 |<a href="https://python-pillow.org/">Pillow</a>|4.1.0|
+|<a href="http://scikit-learn.org/">TensorFlow</a>|0.18.1|
 |<a href="https://www.tensorflow.org/">TensorFlow</a>|1.0.1|
