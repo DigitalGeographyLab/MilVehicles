@@ -15,6 +15,16 @@ from keras.utils import np_utils
 This module extracts features from the ResNet50 pre-trained on ImageNet and
 saves them into a HDF5 file.
 
+Please refer to the following papers if you use this script in your published
+research:
+
+    Chollet, F. (2015-) Keras: Deep learning library for Theano and Tensorflow.
+    URL: https://github.com/fchollet/keras
+    
+    He, K., Zhang, X., Ren, S. and Sun, J. (2016) Deep residual learning for
+    image recognition. In Proceedings of the IEEE Conference on Computer Vision
+    and Pattern Recognition (CVPR'16), pp. 770-778.
+
 Arguments:
     -i/--input:  Path to the root directory containing the images that you wish
                  to extract features from. The images for each class should be
@@ -135,4 +145,3 @@ features, labels = extract_features(input_dir)
 with h5py.File(output_file, 'w') as hf:
     hf.create_dataset("features", data=features)
     hf.create_dataset("labels", data=labels)
-
