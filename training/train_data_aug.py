@@ -153,14 +153,14 @@ with sess.as_default():
     # Create timestamp for filename
     stamp = str(datetime.now()).split(' ')[0]
 
-    print "*** Saved model, weights and history to file ..."
-    # Save weights into file
+    print "*** Saved weights and history to file ..."
+    # Save weights to file
     model.save_weights('weights-{}-{}-{}-aug.h5'.format(arch,
                                                         stamp,
                                                         learning_rate),
                        overwrite=True)
 
-    # Write the training history to file
+    # Write training history to file
     with open('history_{}-{}-{}.pkl'.format(arch,
                                             stamp,
                                             learning_rate),

@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 import cPickle as pickle
 import h5py
 import numpy as np
@@ -29,8 +32,9 @@ research:
 Performing k-fold cross-validation requires you to set a number of parameters, 
 which are described below:
 
-    input_f:       Path to the input file, in which the features and labels are
-                   stored.
+    input_f:       Path to the input file in HDF5 format, in which the features 
+                   and labels are stored. The HDF5 groups are expected to be
+                   named "features" and "labels".
     
     learning_rate: The initial learning rate used for training the network.
 
@@ -42,7 +46,7 @@ Usage:
     python kfold_transfer_learning.py    
 """
 
-# Set up variables
+# Set the variables for training the model
 input_f = 'data.h5'
 learning_rate = 0.01
 
