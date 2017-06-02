@@ -1,6 +1,6 @@
 # Recognizing military vehicles in social media images using deep learning
 
-This repository contains code associated with the conference paper "Recognizing military vehicles in social media images using deep learning", presented at the 2017 IEEE International Conference on Intelligence and Security informatics at Beijing, China in July 2017. The paper is available for download here: [URL]
+This repository contains code associated with the conference paper "Recognizing military vehicles in social media images using deep learning", presented at the 2017 IEEE International Conference on Intelligence and Security informatics at Beijing, China in July 2017. The paper is available for download here: http://www.helsinki.fi/~thiippal/publications/2017-ieee-isi.pdf
 
 The main purpose of this repository is to provide code related to developing the system described in the conference article. The actual system may be found here: https://github.com/thiippal/tankbuster
 
@@ -26,8 +26,8 @@ The system was developed using the following libraries. Make sure you have insta
 
 ## Reference
 
-Feel free to re-use any of the code in this repository. If the code benefits your published research, please consider citing the work using the following reference:
+Feel free to re-use any of the code in this repository. If the code benefits your published research, please consider citing this work using the following reference:
 
 Hiippala, T. (2017) Recognizing military vehicles in social media images using deep learning. In *Proceedings of the 2017 IEEE International Conference on Intelligence and Security informatics*. July 22-24, Beijing, China.
 
-Moreover, do not forget to cite the actual libraries that enable the research: README.md in each subdirectory under this repository lists the appropriate references.
+Moreover, do not forget to cite the libraries that enable the research: the README.md file under each subdirectory of this repository lists the appropriate references.
