@@ -21,8 +21,8 @@ research:
     Chollet, F. (2015-) Keras: Deep learning library for Theano and Tensorflow.
     URL: https://github.com/fchollet/keras
 
-Performing k-fold cross-validation requires you to set a number of parameters, 
-which are described below:
+Training a neural network requires you to set a number of parameters, which are 
+described below:
 
     arch:          Neural network architecture, as defined in the tankbuster
                    library. This value must be "ConvNet", as ResNets are trained

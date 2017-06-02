@@ -12,8 +12,8 @@ from keras.preprocessing.image import load_img, img_to_array
 from keras.utils import np_utils
 
 """
-This module extracts features from the ResNet50 pre-trained on ImageNet and
-stores them into a HDF5 file.
+This module extracts features from a ResNet50 pre-trained on ImageNet and stores
+them into a HDF5 file.
 
 Please refer to the following papers if you use this script in your published
 research:

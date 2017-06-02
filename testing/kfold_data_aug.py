@@ -38,9 +38,7 @@ which are described below:
                    library. This value must be "ConvNet", as ResNets are trained
                    and validated using a different module
                    (kfold_transfer_learning.py).
-
-                   
-                    
+            
     input_dir:     Path to the root directory where the data is stored. Different
                    classes must be located in subdirectories under the root 
                    directory, e.g.

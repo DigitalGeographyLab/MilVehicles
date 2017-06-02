@@ -37,7 +37,6 @@ which are described below:
                    named "features" and "labels".
     
     learning_rate: The initial learning rate used for training the network.
-
     
 Usage:
 

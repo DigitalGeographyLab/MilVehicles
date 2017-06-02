@@ -10,8 +10,9 @@ from keras.optimizers import SGD
 from keras.regularizers import l2
 
 """
-This trains a neural network using the Keras library. The module uses transfer 
-learning and takes a set of features and their associated labels as input.
+This script trains a neural network using the Keras library. The module uses 
+transfer learning, taking a set of features and their associated labels as 
+inputs.
 
 Please refer to the following papers if you use this script in your published
 research:
