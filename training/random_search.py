@@ -29,7 +29,7 @@ research:
     URL: https://github.com/fchollet/keras
 
     Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel,
-    O., Blondel, M. Prettenhofer, P. Weiss, R., Dubourg, V. Vanderplas, J., 
+    O., Blondel, M. Prettenhofer, P., Weiss, R., Dubourg, V. Vanderplas, J., 
     Passos, A., Cournapeau, D., Brucher, M., Perrot, M. and Duchesnay, E. (2011)
     scikit-learn: Machine learning in Python. Journal of Machine Learning 
     Research (12), 2825–2830. 
