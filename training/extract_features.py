@@ -13,7 +13,7 @@ from keras.utils import np_utils
 
 """
 This module extracts features from the ResNet50 pre-trained on ImageNet and
-saves them into a HDF5 file.
+stores them into a HDF5 file.
 
 Please refer to the following papers if you use this script in your published
 research:
@@ -26,6 +26,7 @@ research:
     and Pattern Recognition (CVPR'16), pp. 770-778.
 
 Arguments:
+
     -i/--input:  Path to the root directory containing the images that you wish
                  to extract features from. The images for each class should be
                  placed in subdirectories under the root directory, e.g.:
@@ -40,6 +41,7 @@ Arguments:
                  instead of categorical labels, e.g. '0' or '1'.
 
 Usage:
+
     Run the module from the command line by using the following command, e.g.:
     
     python extract_features.py -i data/ -t features.h5

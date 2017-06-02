@@ -6,8 +6,8 @@ The repository is structured as follows:
 
 | Directory | Description |
 |:---|:---|
-|/training|Code related to training the neural networks|
-|/testing|Code related to running the networks|
+|/testing|Code related to testing and evaluating neural networks|
+|/training|Code related to training neural networks|
 
 ## Required libraries
 
@@ -19,4 +19,5 @@ The system was developed using the following libraries. Make sure you have insta
 |<a href="https://keras.io">Keras</a>|2.0.2|
 |<a href="https://python-pillow.org/">Pillow</a>|4.1.0|
 |<a href="http://scikit-learn.org/">scikit-learn</a>|0.18.1|
+|<a href="https://pypi.python.org/pypi/tankbuster/0.3.2">tankbuster</a>|0.3.2|
 |<a href="https://www.tensorflow.org/">TensorFlow</a>|1.0.1|

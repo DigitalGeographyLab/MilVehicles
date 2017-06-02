@@ -15,8 +15,8 @@ from keras import backend as K
 from keras.optimizers import SGD
 
 """
-This module implements the random search proposed by Bergstra and Bengio (2012)
-using the Keras and Scikit-learn libraries.
+This module performs a random search, as proposed by Bergstra and Bengio (2012),
+using the Keras and scikit-learn libraries.
 
 Please refer to the following papers if you use this script in your published
 research:
@@ -31,7 +31,7 @@ research:
     Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel,
     O., Blondel, M. Prettenhofer, P. Weiss, R., Dubourg, V. Vanderplas, J., 
     Passos, A., Cournapeau, D., Brucher, M., Perrot, M. and Duchesnay, E. (2011)
-    Scikit-learn: Machine learning in Python. Journal of Machine Learning 
+    scikit-learn: Machine learning in Python. Journal of Machine Learning 
     Research (12), 2825–2830. 
     URL: http://www.jmlr.org/papers/v12/pedregosa11a.html
 
@@ -40,17 +40,22 @@ described below:
 
     combinations: An integer defining the number of random parameter
                   combinations to try.
-    data: Path to the root directory where the data is stored. Different classes
-          must be located in subdirectories under the root directory, e.g.
+                  
+    data:         Path to the root directory where the data is stored. Different
+                  classes must be located in subdirectories under the root 
+                  directory, e.g.
           
-                data/
-                data/class_1
-                data/class_2
+                  data/
+                  data/class_1
+                  data/class_2
                 
-    epochs: An integer defining for how many epochs the model is trained for.
-    folds: An integer defining the number of folds trained for each parameter
-           combination.
-    target_size: A tuple defining the size of images to be fed to the network.
+    epochs:       An integer defining for how many epochs the model is trained 
+                  for.
+                  
+    folds:        An integer defining the number of folds trained for each 
+                  parameter combination.
+                  
+    target_size:  A tuple defining the size of images to be fed to the network.
 
 The actual parameters related to the model must be defined in the code. Here is
 an example of parameter ranges, whose combinations will be tested during the
@@ -61,6 +66,12 @@ random search:
     dropout = [0.25, 0.5, 0.75]
     nodes = [64, 128, 256, 512]
     learning_rate = [0.1, 0.01, 0.001, 0.0001]
+    
+Usage:
+
+    Run the module from the command line by using the following command:
+    
+    python random_search.py
 """
 
 # Define the parameters for running the search
@@ -205,10 +216,11 @@ def create_network(l2_lambda=0.0, dropout=0.0, learning_rate=0.1, nodes=0):
     # Define the optimizer
     sgd = SGD(lr=learning_rate)
 
-    # Compile model
+    # Compile the model
     kmodel.compile(loss="categorical_crossentropy", optimizer=sgd,
                    metrics=['categorical_accuracy'])
 
+    # Return the model
     return kmodel
 
 # Prepare data
