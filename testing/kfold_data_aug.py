@@ -36,8 +36,11 @@ which are described below:
 
     arch:          Neural network architecture, as defined in the tankbuster
                    library. This value must be "ConvNet", as ResNets are trained
-                   and validated using a different module.
+                   and validated using a different module
+                   (kfold_transfer_learning.py).
+
                    
+                    
     input_dir:     Path to the root directory where the data is stored. Different
                    classes must be located in subdirectories under the root 
                    directory, e.g.
@@ -59,7 +62,7 @@ Usage:
     python kfold_data_aug.py
 """
 
-# Set variables for training the model
+# Set the variables for training the model
 arch = "ConvNet"  # Architecture
 input_dir = "testdata"  # Input directory
 learning_rate = 0.001  # Learning rate
@@ -196,10 +199,10 @@ with sess.as_default():
 
         # Start training the model
         training = model.fit_generator(training_data,
-                                       samples_per_epoch=2048,
-                                       nb_epoch=1000,
+                                       steps_per_epoch=2048,
+                                       epochs=100,
                                        validation_data=validation_data,
-                                       nb_val_samples=256,
+                                       validation_steps=256,
                                        callbacks=[reduce_lr]
                                        )
 

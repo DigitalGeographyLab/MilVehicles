@@ -1,6 +1,6 @@
 # Recognizing military vehicles in social media images using deep learning
 
-This repository contains code associated with the conference paper "Recognizing military vehicles in social media images using deep learning", which has been accepted for presentation at the 2017 IEEE International Conference on Intelligence and Security informatics at Beijing, China in July 2017.
+This repository contains code associated with the conference paper "Recognizing military vehicles in social media images using deep learning", presented at the 2017 IEEE International Conference on Intelligence and Security informatics at Beijing, China in July 2017.
 
 The repository is structured as follows:
 
