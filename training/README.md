@@ -5,10 +5,9 @@ This folder includes code related to training the neural networks. The individua
 | File | Description | References|
 |:---|:---|:---|
 |extract_features.py|A script for extracting features from images using a ResNet50 pre-trained on ImageNet.|1, 2|
-|random_search.py|A script for conducting a random search for optimal hyperparameters.|1, 2, 3, 4|
+|random_search.py|A script for conducting a random search for optimal hyperparameters.|1, 3, 4|
 |train_data_aug.py|A script for training a neural network from scratch using data augmentation.|1|
-
-
+|train_transfer_learning.py|A script for training a neural network using transfer learning.|1|
 
 ## References
 
