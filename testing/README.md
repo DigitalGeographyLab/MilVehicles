@@ -1,4 +1,4 @@
-# Training
+# Testing
 
 This folder includes code related to testing and evaluating the performance of neural networks. The individual files are described in the table below. The **References** column lists the publications you should cite if you use the scripts in your published research.
 
