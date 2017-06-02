@@ -11,8 +11,9 @@ from keras import backend as K
 import tensorflow as tf
 
 """
-This module trains a neural network using the Keras library. The module uses 
-data augmentation, generating images on the fly from a set of original images.
+This module trains a neural network from scratch using the Keras library. The 
+module uses data augmentation, generating images on the fly from a set of 
+original images.
 
 Please refer to the following paper if you use this script in your published
 research:
