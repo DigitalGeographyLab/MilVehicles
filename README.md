@@ -4,12 +4,21 @@ This repository contains code associated with the conference paper "Recognizing 
 
 The main purpose of this repository is to provide code related to developing the system described in the conference article. The actual system may be found here: https://github.com/thiippal/tankbuster
 
-The repository is structured as follows:
+The repository is structured as follows.
 
 | Directory | Description |
 |:---|:---|
 |<a href="https://github.com/DigitalGeographyLab/MilVehicles/tree/master/testing">/testing</a>|Code related to testing and evaluating neural networks|
 |<a href="https://github.com/DigitalGeographyLab/MilVehicles/tree/master/training">/training</a>|Code related to training neural networks|
+
+These scripts may be used to set up a pipeline for object recognition using two alternatives, data augmentation and transfer learning. The order in which the scripts should be run for either option are given below.
+
+| Step | Data augmentation | Transfer learning |
+|:---|:---|:---|
+|1|random_search.py|random_search.py|
+|2|train_data_aug.py|extract_features.py|
+|3|kfold_data_aug.py|train_transfer_learning.py|
+|4||kfold_transfer_learning.py|
 
 ## Required libraries
 
