@@ -9,7 +9,7 @@ The repository is structured as follows:
 | Directory | Description |
 |:---|:---|
 |<a href="https://github.com/DigitalGeographyLab/MilVehicles/tree/master/testing">/testing</a>|Code related to testing and evaluating neural networks|
-|<a href="https://github.com/DigitalGeographyLab/MilVehicles/tree/master/testing">/training</a>|Code related to training neural networks|
+|<a href="https://github.com/DigitalGeographyLab/MilVehicles/tree/master/training">/training</a>|Code related to training neural networks|
 
 ## Required libraries
 
