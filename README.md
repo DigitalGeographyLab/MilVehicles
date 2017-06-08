@@ -32,6 +32,7 @@ The system was developed using the following libraries. Make sure you have insta
 |<a href="http://scikit-learn.org/">scikit-learn</a>|0.18.1|
 |<a href="https://pypi.python.org/pypi/tankbuster/0.3.2">tankbuster</a>|0.3.2|
 |<a href="https://www.tensorflow.org/">TensorFlow</a>|1.0.1|
+|<a href="http://deeplearning.net/software/theano/">Theano</a>|0.9.0|
 
 ## Reference
 
