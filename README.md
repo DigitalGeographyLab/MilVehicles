@@ -15,8 +15,8 @@ These scripts may be used to set up a pipeline for object recognition using two 
 
 | Step | Data augmentation | Transfer learning |
 |:---|:---|:---|
-|1|random_search.py|random_search.py|
-|2|train_data_aug.py|extract_features.py|
+|1|random_search.py|extract_features.py|
+|2|train_data_aug.py|random_search.py|
 |3|kfold_data_aug.py|train_transfer_learning.py|
 |4||kfold_transfer_learning.py|
 
