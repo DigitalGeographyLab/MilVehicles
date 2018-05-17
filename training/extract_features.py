@@ -105,7 +105,7 @@ def extract_features(sourcedir):
         for f in files:
             if f.split('.')[-1] in ext:  # Check file extension
                 path = os.path.join(root, f)  # Get image path
-                label = path.split('/')[-2]  # Extract class label from path
+                label = os.path.basename(dirpath)  # Extract class label from path
                 numlabel = classes[label]  # Get numerical label from the dict
 
                 print "*** Now processing {} / {} / {} ...".format(
