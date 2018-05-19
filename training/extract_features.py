@@ -104,13 +104,14 @@ def extract_features(sourcedir):
         # Loop over the files in each directory
         for f in files:
             if f.split('.')[-1] in ext:  # Check file extension
-                path = os.path.join(root, f)  # Get image path
-                label = os.path.basename(dirpath)  # Extract class label from path
+                path = os.path.join(root, f) # Get image path
+                dirpath = os.path.dirname(path)  # Get directory name
+                label = os.path.basename(dirpath)  # Get class label from path
                 numlabel = classes[label]  # Get numerical label from the dict
 
-                print "*** Now processing {} / {} / {} ...".format(
+                print("*** Now processing {} / {} / {} ...".format(
                     path, label, numlabel
-                )
+                ))
 
                 # Load and preprocess image
                 image = load_img(path, target_size=(224, 224))  # Load image
